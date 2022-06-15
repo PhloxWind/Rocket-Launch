@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="spaceStyles.css">
+    <script src="spaceScripts.js" async></script>
+    <title>Open Space</title>
+</head>
+<body>
+
+<div class="space">
+    <div class="planet-area">
+        <img src="pics/mars.png" class="planet" alt="planet">
+        <img src="pics/rocket.png" class="rocket" alt="rocket" id="rocket">
+    </div>
+
+    <div class="control-panel">
+        <div class="control-panel__inner">
+
+            <input type="password" id="password" placeholder="Enter launch code">
+            <input type="button" id="password-submit" value="OK">
+
+            <div class="check-buttons">
+                <input type="checkbox" disabled>
+                <input type="checkbox" disabled>
+                <input type="checkbox" disabled>
+                <input type="checkbox" disabled>
+                <input type="checkbox" disabled>
+                <input type="checkbox" disabled>
+            </div>
+
+            <div class="levers">
+                <input type="range" disabled>
+                <input type="range" disabled>
+                <input type="range" disabled>
+                <input type="range" disabled>
+                <input type="range" disabled>
+            </div>
+
+            <input type="button" id="launch" value="Launch" disabled>
+
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

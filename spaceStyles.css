@@ -1,0 +1,129 @@
+/*
+* {
+   box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+ */
+
+body {
+    background-color: black;
+}
+
+.space {
+    background-image: url("pics/space2.jpg");
+    margin: auto;
+    position: relative;
+    width: 30vw;
+    height: 12vh;
+    padding: 20%;
+    top: 2.5vh;
+}
+
+.planet-area {
+    position: absolute;
+    width: fit-content;
+    height: fit-content;
+    bottom: 0;
+    left: 0;
+}
+
+.planet{
+    position: relative;
+    bottom: -1vh;
+    left: -0.3vw;
+    height: 500px;
+    width: 500px;
+    z-index: 1;
+    overflow: hidden;
+
+}
+
+.rocket {
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    left: 230px;
+    top: 70px;
+    overflow: hidden;
+    transform: rotate(30deg);
+    scale: 70%;
+}
+
+.control-panel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 10px 10px;
+    background-color: #000000;
+    background-image: repeating-linear-gradient(45deg, transparent, transparent 20px, rgba(255, 178, 0, 0.89) 20px, rgba(255, 255, 255, 0) 40px);
+
+}
+
+.control-panel__inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background: #272927;
+    width: 380px;
+    height: 350px;
+    padding: 10px;
+}
+
+#password {
+    border-width: thick;
+    border-color: gold;
+    background: #272927;
+    color: lightslategray;
+}
+
+#password-submit {
+    background: gold;
+    border: solid black;
+    border-radius: 7px;
+    padding: 5px;
+    width: 50px;
+}
+
+.check-buttons {
+    display: flex;
+    flex-direction: row;
+    width: inherit;
+    justify-content: space-around;
+}
+
+.check-buttons input {
+    outline-style: solid;
+    outline-color: red;
+}
+
+.levers {
+    display: flex;
+    margin: 0 78px;
+    height: 100px;
+    width: inherit;
+    padding: 20px;
+    justify-content: space-around;
+}
+
+.levers input {
+    transform: rotate(270deg);
+    margin: 0 -49px 10px;
+    scale: 80%;
+
+}
+
+#launch {
+    border-radius: 10px;
+    padding: 15px;
+    background-image: linear-gradient(red, darkred);
+    border: solid black;
+}
+
+
+
